@@ -35,6 +35,10 @@ You can install the required libraries using pip:
 ```bash
 pip install SpeechRecognition pyttsx3 pywhatkit wikipedia pyjokes pyaudio
 ```
+OR
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
