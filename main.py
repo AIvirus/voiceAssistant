@@ -30,7 +30,6 @@ def take_command():
         pass
     return command
 
-
 def run_partner():
     command = take_command()
     print(command)
@@ -46,8 +45,12 @@ def run_partner():
         info = wikipedia.summary(person, 1)
         print(info)
         talk(info)
-    elif 'are you single' in command:
-        talk('I am in a relationship with wifi')
+    elif 'who is your creator' in command:
+        talk('I was created by a Praveen to assist and communicate effectively. They did a great job, don’t you think?')
+    elif 'what can you do' in command:
+        talk('I can perform a variety of tasks like searching for information, answering questions, and helping you stay productive. What would you like me to do first?')
+    elif 'who are you' in command:
+        talk('I am your virtual assistant, designed to make your work easier and more efficient. How can I assist you today?')
     elif 'joke' in command:
         talk(pyjokes.get_joke())
     else:
